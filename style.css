@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-principal {
+    padding: 20px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h2, 
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p#missao strong {
+    color:  red;
+}
+
+.lista-beneficios{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-left: 20px;
+} 
+#imagem-beneficios {
+    width: 40%;
+
+}
+
+
+#sobre {
+    padding: 20px 10px;
+    background-color: #ccc;
+}
