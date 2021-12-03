@@ -5,6 +5,42 @@
     padding: 0;
 }
 
+header {
+    background-color: #bbb;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    background-color: #bbb;
+}
+
+nav {
+    position: absolute;
+    top: 125px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    right: 0;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #c78203;
+}
+
 .titulo-principal {
     padding: 20px;
 }
@@ -40,8 +76,55 @@ p#missao strong {
 
 }
 
-
 #sobre {
     padding: 20px 10px;
     background-color: #ccc;
+}
+
+/* Produtos */
+
+#produtos {
+    list-style-type: none;
+    text-align: center;
+}
+
+.produto {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    padding: 20px 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.produto:hover {
+    border-color: #c78203;
+}
+
+.produto:hover .produto-titulo {
+    font-size: 30px;
+
+}
+
+.produto-titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.produto-valor {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#rodape {
+    background: url('images/bg.jpg');
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
 }
