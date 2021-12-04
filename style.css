@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
-}
+/* Cabecalho */
 
 header {
     background-color: #bbb;
@@ -41,6 +38,8 @@ nav a:hover {
     color: #c78203;
 }
 
+/* Home */
+
 .titulo-principal {
     padding: 20px;
 }
@@ -49,7 +48,7 @@ nav a:hover {
     width: 100%;
 }
 
-p {
+#sobre p {
     margin-bottom: 10px;
     text-align: center;
     line-height: 1.5;
@@ -114,11 +113,90 @@ p#missao strong {
     font-weight: bold;
 }
 
-
 .produto-valor {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* Contatos */
+
+#contato {
+    width: 70%;
+    margin: 40px auto 0;
+}
+
+#contato legend {
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+#contato label {
+    display: block;
+    padding: 5px 0;
+
+    font-size: 16px;
+} 
+
+#nome,
+#email,
+#telefone,
+#mensagem {
+    display: block;
+    width: 50%;
+    margin: 5px 0;
+}
+
+input#submit {
+    display: block;
+    width: 40%;
+    margin: 20px 0 0 0;
+    background-color: #ffa500;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+input#submit:hover {
+    background-color: #ff8c00;
+    cursor: pointer;
+}
+
+select {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#caixa-tabela {
+    width: 70%;
+    margin: 20px auto;
+}
+
+#caixa-tabela p {
+    padding: 15px 0;
+}
+
+#caixa-tabela table {
+    width: 20%;
+    border-spacing: 0;
+}
+
+#caixa-tabela th {
+    padding: 5px;
+    background-color: #a9a9a9;
+    border: 1px solid #000
+}
+
+#caixa-tabela td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000
+}
+
+/* Rodapé */
 
 #rodape {
     background: url('images/bg.jpg');
