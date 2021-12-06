@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+/* Font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #FEFEFE, #aaa);
+}
+
+/* Cabecalho */
+
+header {
+    background-color: #bbb;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    background-color: #bbb;
+}
+
+nav {
+    position: absolute;
+    top: 125px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    right: 0;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #c78203;
+}
+
+/* Home */
+
+#sobre,
+#beneficios,
+#mapa {
+    padding: 2em 1em;
+    width: 940px;
+	margin: 0 auto;
+}
+
+
+#sobre p{
+    margin: 0 0 1em;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.banner {
+    width: 100%;
+}
+
+#utensilios {
+    width: 120px;
+    margin: 0 1em 1em 0;
+    float: left;
+}
+
+p#missao strong {
+    font-weight: bold;
+}
+
+p#missao em {
+    font-style: italic;
+}
+
+#mapa p {
+    margin: 0 0 1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    line-height: 1.5;
+}
+
+.itens-beneficios:first-child {
+    font-weight: bold;
+}
+
+.itens-beneficios::before {
+    content: "💈 " ;
+}
+
+#imagem-beneficios {
+    width: 60%;
+    box-shadow: 10px 10px 10px #000;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+
+/* Produtos */
+
+#produtos {
+    list-style-type: none;
+    text-align: center;
+}
+
+.produto {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    padding: 20px 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.produto img {
+    width: 70%;
+}
+
+.produto-descricao {
+    margin: 0 0 1em;
+}
+
+.produto:hover {
+    border-color: #c78203;
+}
+
+.produto:hover .produto-titulo {
+    font-size: 30px;
+
+}
+
+.produto-titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.produto-valor {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Contatos */
+
+#contato {
+    width: 70%;
+    margin: 40px auto 0;
+}
+
+#contato legend {
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+#contato label {
+    display: block;
+    padding: 5px 0;
+
+    font-size: 16px;
+} 
+
+#nome,
+#email,
+#telefone,
+#mensagem {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+input#submit {
+    display: block;
+    width: 50%;
+    margin: 20px 0 0 0;
+    background-color: #ffa500;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+input#submit:hover {
+    background-color: #ff8c00;
+    cursor: pointer;
+}
+
+select {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#caixa-tabela {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#caixa-tabela p {
+    padding: 15px 0;
+}
+
+#caixa-tabela table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+#caixa-tabela th {
+    padding: 5px;
+    background-color: #a9a9a9;
+    border: 1px solid #000
+}
+
+#caixa-tabela td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000
+}
+
+/* Rodapé */
+
+#rodape {
+    width: 100%;
+    background: url('images/bg.jpg');
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .caixa, 
+    #sobre, 
+    #beneficios, 
+    #mapa, 
+    #rodape, 
+    #conteudo-beneficios, 
+    .video, 
+    #banner {
+        width: auto;
+    }
+
+    #imagem-beneficios, #lista-beneficios {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+}
